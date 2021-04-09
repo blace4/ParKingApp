@@ -19,7 +19,6 @@ class Search extends StatelessWidget {
     final currentPosition = Provider.of<Position>(context);
     final placesProvider = Provider.of<Future<List<Place>>>(context);
     final geoService = GeolocatorService();
-    //Firebase.initializeApp();
 
     return FutureProvider(
       create: (context) => placesProvider,
